@@ -1,6 +1,7 @@
 // Import required libraries and set up the application
 const express = require('express');
 const app = express();
+const sizeOf = require('image-size');
 const multer = require('multer');
 const fs = require('fs');
 const cors = require('cors');
