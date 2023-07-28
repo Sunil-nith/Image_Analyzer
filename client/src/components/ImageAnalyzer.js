@@ -69,7 +69,7 @@ const ImageAnalyzer= () => {
               <h3>{apiResponse.message}</h3>
               <p>Landmark : {apiResponse.Landmark}</p>
               <p>Object Found : {apiResponse.Object_found && apiResponse.Object_found.length > 0 ? apiResponse.Object_found.join(', ') : 'None'}</p>
-              <p>Dominance Color : {apiResponse.Dominance_Color}</p>
+              <p>Dominant Color : {apiResponse.Dominant_Color}</p>
               {apiResponse.Image_Dimension && (
                 <p>
                   Image Dimension : Width={apiResponse.Image_Dimension.width}px , Height={apiResponse.Image_Dimension.height}px

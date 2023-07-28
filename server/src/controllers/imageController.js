@@ -56,7 +56,7 @@ exports.processImage = async (req, res) => {
             }
 
             // Extract dominant color (if available) or set a default message
-            let dominance_Color;
+            let dominant_Color;
             const [result_2] = await client.imageProperties(image);
             if (result_2) {
                 const colors = result_2.imagePropertiesAnnotation.dominantColors.colors;
@@ -65,9 +65,9 @@ exports.processImage = async (req, res) => {
                 const b = rgb.blue;
                 const g = rgb.green;
                 const hexColor = "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
-                dominance_Color = `${hexColor.toUpperCase()}, RGB(${r},${g},${b})`;
+                dominant_Color = `${hexColor.toUpperCase()}, RGB(${r},${g},${b})`;
             } else {
-                dominance_Color = 'No color was detected in the image..';
+                dominant_Color = 'No color was detected in the image..';
             }
 
             // Get the dimensions (height and width) of the image
@@ -83,7 +83,7 @@ exports.processImage = async (req, res) => {
                 message: 'File uploaded and processed successfully!',
                 Landmark: labels,
                 Object_found: detectObjects,
-                Dominance_Color: dominance_Color,
+                Dominant_Color: dominant_Color,
                 Image_Dimension: Image_Dimension,
             });
         }
