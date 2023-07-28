@@ -86,7 +86,7 @@ Before running the application, you need to configure the Google Cloud Vision AP
 1. Go to the Google Cloud Console.
 2. Create a new project (if you don't have one already) and enable the Vision API and billing for the project.
 3. Create a service account key and download the credentials in JSON format as key.json.
-4. Place the key.json file in the root directory of the project.
+4. Replace the key.json file in the server directory of the project with your key.json file.
 
 ## Usage
 
