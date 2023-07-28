@@ -2,11 +2,11 @@
 
 The Image Analyzer web application allows users to upload images and retrieve analysis results, including object recognition, Landmark detection, dominant colors, and image dimensions using the Google Cloud Vision API.
 
-## Demo
+## Demo Video
 
 Check out the demo video of the Image Analyzer web application:
 
-`https://drive.google.com/file/d/1bgSU2Z6QbI9ZzlvHL8vBULfiCu7I71fk/view?usp=drive_link`
+https://drive.google.com/file/d/1bgSU2Z6QbI9ZzlvHL8vBULfiCu7I71fk/view?usp=drive_link
 
 ### Technologies Used
 
@@ -25,7 +25,6 @@ The following technologies were used to develop this web application:
 
 
 ## Features
-
 - User Interface:
   - Allows users to upload an image from their local system.
   - Displays a loading spinner while the image is being processed.
@@ -64,22 +63,22 @@ Before running the Image Analyzer web application, make sure you have the follow
    ```
 3. Install frontend and backend dependencies:
 
-* Navigate to the client directory (frontend)
-    ```sh
-    cd client
-    ```
-then
-    ```sh
-    npm install
-    ```
-* Navigate to the server directory (Backend)
-    ```sh
-    cd server
-    ```
-then 
-    ```sh
-    npm install
-    ```
+  * Navigate to the client directory (frontend)
+      ```sh
+      cd client
+      ```
+  * Then
+      ```sh
+      npm install
+      ```
+  * Navigate to the server directory (Backend)
+      ```sh
+      cd server
+      ```
+  * Then
+      ```sh
+      npm install
+      ```
    
 ## Configuration
 Before running the application, you need to configure the Google Cloud Vision API credentials:
@@ -94,22 +93,29 @@ Before running the application, you need to configure the Google Cloud Vision AP
 * To start the application, follow these steps:
 1. Open two terminal.
 2. In first terminal, Start the backend server:
-   * First Navigate to the server directory (Backend) and then
+* Navigate to the server directory (Backend)
     ```sh
-    npm start
+    cd server
+    ```
+* Then
+    ```sh
+    npm install
     ```
 
 3. In second terminal, Start the frontend development server:
-   * First Navigate to the client directory (Frontend) and then 
+* Navigate to the client directory (frontend)
     ```sh
-    npm start
+    cd client
     ```
-4. The application will be accessible at `http://localhost:3000` in your web browser.
+* Then
+    ```sh
+    npm install
+    ```
+4. The application will be accessible at http://localhost:3000 in your web browser.
 ## Contributing
 Contributions are welcome! If you find any issues or have suggestions for improvement, please create an issue or submit a pull request
 
 ## Contact
-
 If you have any questions or need further assistance, please feel free to contact me at skjnv2009@gmail.com.
 
 
